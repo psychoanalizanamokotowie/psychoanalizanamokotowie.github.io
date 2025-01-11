@@ -1,0 +1,218 @@
+/* General body styling */
+body {
+    margin: 0;
+    font-family: "Open Sans", sans-serif;
+    background-color: #FBF6F1;
+}
+
+/* Header Styling */
+.header {
+    background-color: #6C6965;
+    color: white;
+    padding: 20px 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 24px;
+    font-family: "Nunito Sans", sans-serif;
+}
+
+/* Navigation for large screens */
+.nav {
+    display: flex; /* Visible by default */
+    gap: 20px;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #FBF6F1; /* Ensure text color is visible */
+    font-size: 14px;
+    padding: 5px 10px;
+}
+
+.nav a:hover {
+    background-color: #5C5A56;
+    border-radius: 3px;
+}
+
+/* Hamburger button */
+.hamburger {
+    display: none; /* Hidden by default */
+    font-size: 24px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+/* Full-Screen Navigation Overlay */
+.nav-overlay {
+    display: none; /* Hidden by default */
+}
+
+@media (max-width: 768px) {
+    /* Hide navigation links on smaller screens */
+    .nav {
+        display: none;
+    }
+
+    /* Show hamburger button on smaller screens */
+    .hamburger {
+        display: block;
+    }
+
+    /* Full-screen overlay styles */
+    .nav-overlay {
+        display: flex;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #6C6965;
+        color: white;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        opacity: 0;
+        visibility: hidden;
+        transform: scale(0.95);
+        transition: all 0.3s ease;
+        z-index: 10;
+    }
+
+    .nav-overlay.active {
+        opacity: 1;
+        visibility: visible;
+        transform: scale(1);
+    }
+
+    .nav-links {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+
+    .nav-links a {
+        text-decoration: none;
+        color: #FBF6F1;
+        font-size: 20px;
+        /* text-transform: uppercase; */
+        letter-spacing: 2px;
+    }
+
+    .nav-links a:hover {
+        color: #DCD8D1;
+    }
+
+    .close-btn {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        font-size: 36px;
+        background: none;
+        border: none;
+        color: white;
+        cursor: pointer;
+    }
+}
+
+/* Main content block */
+.main-content {
+    max-width: 1200px;
+    margin: 30px auto;
+    background-color: #FBF6F1;
+    padding: 20px;
+    border-radius: 5px;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.0625rem;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: 1.85;
+    color: rgba(108, 105, 101, 0.75);
+}
+
+/* Footer Styling */
+.footer {
+    background-color: #6C6965; /* Matches the header background */
+    color: #FBF6F1; /* Text color for readability */
+    text-align: center;
+    padding: 20px 10%;
+    position: relative; /* Ensures proper layout positioning */
+    bottom: 0;
+    width: 100%;
+}
+
+
+
+/* About Section */
+.about-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #FBF6F1;
+    border-radius: 5px;
+    font-family: "Open Sans", sans-serif;
+}
+
+.about-content {
+    flex: 1;
+    min-width: 300px; /* Ensure content wraps on smaller screens */
+    font-size: 1.0625rem;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: 1.85;
+    color: rgba(108, 105, 101, 0.75);
+}
+
+.about-image {
+    flex: 1;
+    min-width: 300px; /* Ensure image wraps below content on small screens */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-image img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+/* Footer Styling */
+.footer {
+
+    margin: 0;
+    font-size: 14px;
+    font-family: "Open Sans", sans-serif;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+   
+    color: #FBF6F1; /* Text color */
+    padding: 10px 0;
+    box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.1); /* Optional shadow for effect */
+}
+
+/* Footer Content Styling */
+.footer-content {
+    display: flex;
+    justify-content: center; /* Center items horizontally */
+    align-items: center;
+    padding: 10px 0;
+    font-size: 14px;
+    gap: 30px; /* Control spacing between items */
+}
+
+.footer-content div {
+    text-align: center;
+    margin: 0; /* Remove additional margins */
+}

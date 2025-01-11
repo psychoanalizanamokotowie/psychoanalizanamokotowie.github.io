@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marzena Pasek | Psychoanaliza na Mokotowie</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <div class="header">
+        <h1>Psychoanaliza na Mokotowie</h1>
+        
+        <!-- Navigation for wider screens -->
+        <div class="nav">
+            <a href="./index.html">Strona główna</a>
+            <a href="./marzena-pasek.html">Marzena Pasek</a>
+            <a href="./justyna-pawlowska.html">Justyna Pawłowska</a>
+        </div>
+        
+        <!-- Hamburger menu for smaller screens -->
+        <button class="hamburger" aria-label="Toggle navigation">
+            &#9776;
+        </button>
+        
+        <!-- Full-screen overlay for smaller screens -->
+        <div class="nav-overlay" id="navOverlay">
+            <button class="close-btn" id="closeBtn" aria-label="Close navigation">&times;</button>
+            <div class="nav-links">
+                <a href="./index.html">Strona główna</a>
+                <a href="./marzena-pasek.html">Marzena Pasek</a>
+                <a href="./justyna-pawlowska.html">Justyna Pawłowska</a>
+            </div>
+        </div>
+    </div>
+    
+
+    <!-- Main content -->
+    <div class="about-section">
+        <div class="about-content">
+            <h2>Marzena Pasek</h2>
+            <p>Certyfikowana psychoterapeutka psychoanalityczna. Członkini Polskiego Towarzystwa Psychoterapii Psychoanalitycznej, superwizorka i psychoterapeutka szkoleniowa Polskiego Towarzystwa Psychoterapii Psychoanalitycznej.</p>
+            <p>Magister resocjalizacji , absolwentka Uniwersytetu Wrocławskiego. Szkolenie całościowe z psychoterapii psychoanalitycznej ukończyła przy Krakowskiej Szkole Psychoterapii Psychoanalitycznej. Współzałożycielka i prezes Fundacji Warszawska Szkoła Psychoterapii Psychoanalitycznej, w której jest również wykładowczynią.</p>
+            <p><strong>Pracuje psychoterapeutycznie w gabinecie prywatnym z nastolatkami oraz osobami dorosłymi.</strong></p>
+        </div>
+        <div class="about-image">
+            <img src="marzena.jpg" alt="Justyna Pawłowska">
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div>
+                <strong>Telefon</strong>
+                <p>501 224 737</p>
+            </div>
+            <div>
+                <strong>Email</strong>
+                <p>mpasek@psychoanalizanamokotowie.pl</p>
+            </div>
+            <div>
+                <strong>Gabinet</strong>
+                <p>Rakowiecka 32a/85</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const hamburger = document.querySelector('.hamburger');
+        const navOverlay = document.getElementById('navOverlay');
+        const closeBtn = document.getElementById('closeBtn');
+
+        hamburger.addEventListener('click', () => {
+            navOverlay.classList.add('active');
+        });
+
+        closeBtn.addEventListener('click', () => {
+            navOverlay.classList.remove('active');
+        });
+    </script>
+</body>
+</html>

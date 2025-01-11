@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Justyna Pawłowska | Psychoanaliza na Mokotowie</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <div class="header">
+        <h1>Psychoanaliza na Mokotowie</h1>
+        
+        <!-- Navigation for wider screens -->
+        <div class="nav">
+            <a href="./index.html">Strona główna</a>
+            <a href="./marzena-pasek.html">Marzena Pasek</a>
+            <a href="./justyna-pawlowska.html">Justyna Pawłowska</a>
+        </div>
+        
+        <!-- Hamburger menu for smaller screens -->
+        <button class="hamburger" aria-label="Toggle navigation">
+            &#9776;
+        </button>
+        
+        <!-- Full-screen overlay for smaller screens -->
+        <div class="nav-overlay" id="navOverlay">
+            <button class="close-btn" id="closeBtn" aria-label="Close navigation">&times;</button>
+            <div class="nav-links">
+                <a href="./index.html">Strona główna</a>
+                <a href="./marzena-pasek.html">Marzena Pasek</a>
+                <a href="./justyna-pawlowska.html">Justyna Pawłowska</a>
+            </div>
+        </div>
+    </div>
+    
+
+    <!-- Main content -->
+    <div class="about-section">
+        <div class="about-content">
+            <h2>Justyna Pawłowska</h2>
+            <p>Certyfikowana psychoanalityczka i psychoterapeutka psychoanalityczna. Członkini Polskiego Towarzystwa Psychoanalitycznego (PTPa) i International Psychoanalytical Association (IPA). Superwizorka i psychoterapeutka szkoleniowa Polskiego Towarzystwa Psychoterapii Psychoanalitycznej. Absolwentka Psychologii Wydziału Nauk Społecznych KUL.</p>
+            <p>Ukończyła podwójne szkolenie całościowe w Studium Psychoterapii Analitycznej oraz szkolenie w Polskim Towarzystwie Psychoanalitycznym. Uczy w Psychoanalitycznej Szkole Psychoterapii w Warszawie PTPP.</p>
+            <p><strong>Prowadzi psychoterapię dorosłych i młodzieży od 16 r.ż. w prywatnym gabinecie przy ul. Kwiatowej w Warszawie.</strong></p>
+        </div>
+        <div class="about-image">
+            <img src="justyna.jpg" alt="Justyna Pawłowska">
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div>
+                <strong>Telefon</strong>
+                <p>502519755</p>
+            </div>
+            <div>
+                <strong>Email</strong>
+                <p>jpawlowska@psychoanalizanamokotowie.pl</p>
+            </div>
+            <div>
+                <strong>Facebook</strong>
+                <p><a href="#" style="color: #FBF6F1;">f</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const hamburger = document.querySelector('.hamburger');
+        const navOverlay = document.getElementById('navOverlay');
+        const closeBtn = document.getElementById('closeBtn');
+
+        hamburger.addEventListener('click', () => {
+            navOverlay.classList.add('active');
+        });
+
+        closeBtn.addEventListener('click', () => {
+            navOverlay.classList.remove('active');
+        });
+    </script>
+</body>
+</html>
