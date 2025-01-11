@@ -137,16 +137,6 @@ body {
     color: rgba(108, 105, 101, 0.75);
 }
 
-/* Footer Styling */
-.footer {
-    background-color: #6C6965; /* Matches the header background */
-    color: #FBF6F1; /* Text color for readability */
-    text-align: center;
-    padding: 20px 10%;
-    position: relative; /* Ensures proper layout positioning */
-    bottom: 0;
-    width: 100%;
-}
 
 
 
@@ -186,20 +176,20 @@ body {
     border-radius: 5px;
 }
 
+
 /* Footer Styling */
 .footer {
-
+    background-color: #6C6965; /* Matches the header background */
+    color: #FBF6F1; /* Text color for readability */
+    text-align: center;
+    padding: 20px 0; /* Changed from 20px 10% to 20px 0 */
+    position: relative; /* Ensures proper layout positioning */
+    bottom: 0;
+    width: 100%;
     margin: 0;
     font-size: 14px;
     min-height: 200px;
     font-family: "Open Sans", sans-serif;
-    width: 100%;
-    position: static;
-    bottom: 0;
-    left: 0;
-   
-    color: #FBF6F1; /* Text color */
-    padding: 10px 0;
     box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.1); /* Optional shadow for effect */
 }
 
@@ -208,12 +198,24 @@ body {
     display: flex;
     justify-content: center; /* Center items horizontally */
     align-items: center;
-    padding: 10px 0;
+    padding: 10px 20px; /* Add horizontal padding for spacing */
     font-size: 14px;
     gap: 30px; /* Control spacing between items */
+    max-width: 1200px; /* Constrain width to align with the main content */
+    margin: 0 auto; /* Center the content within the footer */
 }
 
+/* Footer Item Styling */
 .footer-content div {
     text-align: center;
     margin: 0; /* Remove additional margins */
 }
+
+/* Responsive Styling for Small Screens */
+@media screen and (max-width: 768px) {
+    .footer-content {
+        flex-direction: column; /* Change layout to column */
+        gap: 15px; /* Adjust spacing between items */
+    }
+}
+
