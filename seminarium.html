@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Psychoanaliza na Mokotowie</title>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+    <div class="header">
+        <h1>Psychoanaliza na Mokotowie</h1>
+        
+        <!-- Navigation for wider screens -->
+        <div class="nav">
+            <a href="./index.html">Strona główna</a>
+            <a href="./seminariun.html">Seminarium</a>
+            <a href="./marzena-pasek.html">Marzena Pasek</a>
+            <a href="./justyna-pawlowska.html">Justyna Pawłowska</a>
+        </div>
+        
+        <!-- Hamburger menu for smaller screens -->
+        <button class="hamburger" aria-label="Toggle navigation">
+            &#9776;
+        </button>
+        
+        <!-- Full-screen overlay for smaller screens -->
+        <div class="nav-overlay" id="navOverlay">
+            <button class="close-btn" id="closeBtn" aria-label="Close navigation">&times;</button>
+            <div class="nav-links">
+                <a href="./index.html">Strona główna</a>
+                <a href="./seminariun.html">Seminarium</a>
+                <a href="./marzena-pasek.html">Marzena Pasek</a>
+                <a href="./justyna-pawlowska.html">Justyna Pawłowska</a>
+            </div>
+        </div>
+    </div>
+    
+    
+
+    <!-- Main content block -->
+    <div class="main-content">
+        <p>SEMINARIUM</p>
+        <p><b>Ciało i seksualność</b></p>
+        <p><b>Współczesna perspektywa psychoanalityczna</b></p>
+
+        <p>Do uczestnictwa zapraszamy psychoterapeutów pracujących psychoanalitycznie i psychodynamicznie.
+Spotkania odbywać się będą raz w miesiącu w soboty w godz. 9.30 -12.45, a każde z nich zawierać
+będzie część teoretyczną (1,5 h), w której dyskutowane będą teksty m.in. A. Lemmy, J. McDougall, R.
+Perelberg, J. Laplanche’a, A. Greena, P. Mollona, G. Pollock, H. Searlesa i T. Ogdena oraz część
+kliniczną (1.5 h) poświęconą analizie materiału z pracy psychoterapeutycznej.
+Seminarium spełnia wymogi i posiada status szkolenia uzupełniającego PTPP.</p>
+            
+<b>Tematyka spotkań:</b><br>
+<p>
+                1) Wstęp do tematu seksualności.<br>
+                2) Wstyd wpisany w seksualność.<br>
+                3) Początki życia i seksualność.<br>
+                4) Kobiecość cielesna.<br>
+                5) Biseksualność.<br>
+                6) Ciało, które mamy i ciało, którym jesteśmy.<br>
+                7) Perwersje seksualne.<br>
+                8) Przeniesienie i przeciwprzeniesienie cielesne.<br>
+                9) Przeniesienie i przeciwprzeniesienie miłosne i erotyczne.<br>
+                10) Dyskusja o seksualności we współczesnej psychoanalizie.<br>
+            </p>
+                <p><b>Prowadzące:</b></p>
+
+                <p>Justyna Pawłowska, psychoanalityczka PTPa i IPA oraz psychoterapeutka szkoleniowa i superwizorka
+                    PTPP, wykładowczyni w PSP Warszawa
+                    Marzena Pasek: superwizorka i psychoterapeutka szkoleniowa PTPP, wykładowczyni w PSP Warszawa.</p>
+
+                    <p><b>Terminy spotkań:</b></p>
+
+                    <p>22.03.2025; 12.04.2025; 17.05.2025; 28.06.2025; 20.09.2025; 18.10.2025; 15.11.2025; 20.12.2025;
+                        17.01.2026; 21.02.2026</p>
+
+
+                    <b>Koszt:</b>
+
+                    <p>3500zł – 10 rat 350 zł, płatność co miesiąc przed każdym seminarium lub 3000 zł – płatność
+                        jednorazowa lub w dwóch ratach 1500 zł przed pierwszym i przed szóstym seminarium.
+                        Studenci i absolwenci PSP (w trakcie certyfikacji) – 3000 zł, bez względu na ilość rat.
+                        Nieobecność nie zwalnia z płatności.</p>
+
+                        <b>Miejsce:</b>
+        
+                        <p>Spotkania odbywać się będą stacjonarnie w Warszawie, ul. Nowogrodzka 49, II p. (siedziba Ośrodka
+                            Relacje).</p>
+
+                            <p><b>Zapisy:</b> jpawlowska@psychoanalizanamokotowie.pl</p>
+    
+    </div>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2025 Psychoanaliza na Mokotowie</p>
+        </div>
+    </footer>
+
+    
+</body>
+
+<!-- <script>
+    const hamburger = document.querySelector('.hamburger');
+    const nav = document.querySelector('.nav');
+
+    hamburger.addEventListener('click', () => {
+        nav.classList.toggle('active'); // Toggle the 'active' class
+    });
+</script> -->
+
+<script>
+    const hamburger = document.querySelector('.hamburger');
+    const navOverlay = document.getElementById('navOverlay');
+    const closeBtn = document.getElementById('closeBtn');
+
+    // Open the overlay
+    hamburger.addEventListener('click', () => {
+        navOverlay.classList.add('active');
+        console.log("overlay active");
+    });
+
+    // Close the overlay
+    closeBtn.addEventListener('click', () => {
+        navOverlay.classList.remove('active');
+        console.log("overlay disabled");
+    });
+</script>
+
+
+
+</html>
